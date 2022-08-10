@@ -14,13 +14,13 @@ let num2 = 0.1  //  number
 // CONTAS COM PONTO FLUTUANTE //
 
     num1 += num2
-    num1 += num2
+    num1 += num2    // incremento soma
     num1 += num2
 
-    num1 = Number(num1.toFixed(2))
+    num1 = Number(num1.toFixed(2))  // "Number" convertendo para inteiro
 
     console.log(num1)
-    console.log(Number.isInteger(num1))
+    console.log(Number.isInteger(num1)) // teste "true"
 
     
 
