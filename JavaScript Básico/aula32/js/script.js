@@ -21,6 +21,10 @@ function meuEscopo () {
         pessoas.push(cadastro)
         console.log(pessoas)
         
+        result.innerHTML += `<p>Nome: ${nome.value}</p>` 
+        result.innerHTML += `<p>Sobrenome: ${sobrenome.value}</p>`
+        result.innerHTML += `<p>Peso: ${peso.value}</p>`
+        result.innerHTML += `<p>Altura: ${altura.value}</p>`
     }
     
     form.addEventListener('submit', recebeEventoForm)
