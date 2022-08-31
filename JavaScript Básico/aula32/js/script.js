@@ -1,5 +1,6 @@
 function meuEscopo () {
     const form = document.querySelector('.form')
+    let result = document.getElementById("resultado")
 
     const pessoas = []
     
@@ -19,6 +20,7 @@ function meuEscopo () {
         
         pessoas.push(cadastro)
         console.log(pessoas)
+        
     }
     
     form.addEventListener('submit', recebeEventoForm)
