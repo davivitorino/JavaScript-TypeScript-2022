@@ -19,7 +19,7 @@ function meuEscopo () {
             cadastro[3] = altura.value
         
         pessoas.push(cadastro)
-        console.log(pessoas)
+        console.log( pessoas instanceof Array ) // teste de array?
         
         result.innerHTML += `<p>Nome: ${nome.value}</p>` 
         result.innerHTML += `<p>Sobrenome: ${sobrenome.value}</p>`
