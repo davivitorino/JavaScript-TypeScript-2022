@@ -32,21 +32,24 @@
         <p>obesidade grau 3</p>
       </div>
     </div>
-    <form class=".form">
+    <form>
       <p>
         <label for="peso">Peso:</label>
-        <input type="text" name="" id="peso" minlength="" maxlength="" required>
+        <input type="number" name="" class="peso" minlength="" maxlength="" required>
       </p>
+      <!--
       <p>
         <label for="peso">Altura:</label>
-        <input type="text" name="" id="Altura" minlength="" maxlength="" required>
+        <input type="number" name="" class="Altura" minlength="" maxlength="" required>
       </p>
-      <p>
-        <button>Calcular</button>
-      </p>
+      -->
     </form>
+      <p>
+        <button onclick="CalculoImc()">Calcular</button>
+      </p>
+      <div id="result">
+      </div> 
   </section>
-
   <script src="./assets/js/main.js"></script>
 </body>
 
