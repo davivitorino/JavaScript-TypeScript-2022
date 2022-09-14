@@ -1,10 +1,5 @@
 const resultado = document.querySelector("#result")
 
-document.querySelector(".altura").addEventListener("change", function(){
-    this.value = parseFloat(this.value).toFixed(2);
- });
-
-
 function CalculoImc() {
     
     let altura = document.querySelector(".altura").value;
