@@ -1,5 +1,4 @@
 // capturando evento submit do formulário
-
 const form = document.querySelector('#formulario')
 
 form.addEventListener('submit', function(e) {
@@ -21,9 +20,9 @@ form.addEventListener('submit', function(e) {
     }
 
     const imc = getImc(peso, altura);
-    const nivelImc = getImc(imc);
+    const nivelImc = getNivelImc(imc);
 
-    const msg = `Seu IMC é ${imc} (${nivelImc}.)`;
+    const msg = `Seu IMC é ${imc} ${nivelImc}`;
 
     setResultado(msg, true);
 });
