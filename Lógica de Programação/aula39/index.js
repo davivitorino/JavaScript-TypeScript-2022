@@ -9,3 +9,5 @@ const nivelUsuario = pontuacaoUsuario >= 1000 ? 'usuário vip' : 'usuário norma
 
 const corUsuario = null;                        // cor usuário 'vazio'
 const corPadrao = corUsuario || 'preta'         // definição do usuário
+
+console.log(corPadrao)
