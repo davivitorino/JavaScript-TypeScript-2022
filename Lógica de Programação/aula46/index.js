@@ -10,7 +10,7 @@ for (let i = 0; i <= 10; i+= 10) {
     console.log(`linha ${i}`)
 }
 
-// decrementa '-='
+// decrementando '-='
 
 for (let i = 100; i >= 10; i-= 10) {
     console.log(`linha ${i}`)
