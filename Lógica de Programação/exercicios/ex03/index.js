@@ -2,17 +2,20 @@
 
 // function not be optimized!
 
-
-
-let validNumber = (n) => { return !isNaN(n) ? n : false};
+function FizzBuzz(n) {
     
-console.log(validNumber(1))
+    let num;
+    let validNumber = n => { return !isNaN(n) ? num = n : num = parseInt(n) };
+    validNumber(n);
 
-/*
-if(n % 3 == 0 && n % 5 == 0) {
-    return "FizzBuzz"
-}
-*/
+    if(num % 3 == 0 && num % 5 == 0) return "FizzBuzz";
+    if (num % 3 == 0) return "Fizz";
+    if (num % 5 == 0) return "Buzz";
+    return num;
+    
 
 
+};
+
+console.log(FizzBuzz(5));
 
