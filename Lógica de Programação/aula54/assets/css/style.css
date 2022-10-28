@@ -19,11 +19,15 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 640px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 form input, form label, form button {
@@ -58,5 +62,12 @@ form button:hover {
 }
 
 .relogio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
   font-size: 3em;
+  border: 2px black solid;
+  border-radius: 150px ;
 }
