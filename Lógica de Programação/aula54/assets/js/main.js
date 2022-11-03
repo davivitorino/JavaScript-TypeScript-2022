@@ -15,9 +15,8 @@ relogio.innerHTML += `${zero_ho}${hora}:${zero_min}${min}:${zero_seg}${seg}`;
 
 // iniciando cronometro
 iniciar.addEventListener('click', () => {
-
+    
     let timer = setInterval(() => { 
-        
         seg += 1;  
         
         if(seg > 12) return min += 1, seg = 0;
@@ -34,14 +33,11 @@ iniciar.addEventListener('click', () => {
 
     }, 10); 
 
-    pausar.addEventListener('click', () => {
-        
-        clearInterval(timer);
-        
+    pausar.addEventListener('click', () => { 
+        clearInterval(timer); 
     });
 
-    zerar.addEventListener('click', () => {
-        
+    zerar.addEventListener('click', () => { 
         clearInterval(timer);
         relogio.innerHTML = `${zero_ho=0}${hora=0}:${zero_min=0}${min=0}:${zero_seg=0}${seg=0}`;
     })
