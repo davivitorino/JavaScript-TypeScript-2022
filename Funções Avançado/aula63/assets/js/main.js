@@ -83,7 +83,7 @@ calculadora.inicia();
 // constrution fuction
 
 function calculadora() {
-
+// acumulador
     let numeros = []
     
     this.display = document.querySelector('.display');
@@ -92,7 +92,7 @@ function calculadora() {
         this.cliqueBotoes();
         this.pressionaEnter();
     }
-
+// somente adição
     this.realizaConta = () => {
         let resultado = numeros[0] + Number(this.display.value);
         this.clearDisplay();
