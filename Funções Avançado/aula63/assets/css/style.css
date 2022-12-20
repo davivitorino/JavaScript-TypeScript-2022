@@ -67,7 +67,7 @@ form button:hover {
   text-align: right;
 }
 
-.btn-clear ,.btn-num ,.btn-del ,.btn-eq {
+.btn-clear ,.btn-num ,.btn-del ,.btn-eq, .btn-div, .btn-vzs, .btn-adc, .btn-sub {
   width: 100%;
   height: 50px;
   font-size: 1em;
@@ -84,6 +84,6 @@ form button:hover {
   background: rgb(0, 182, 202);
 }
 
-.btn-clear:hover ,.btn-num:hover ,.btn-del:hover {
+.btn-clear:hover ,.btn-num:hover ,.btn-del:hover, .btn-div:hover, .btn-vzs:hover, .btn-adc:hover, .btn-sub:hover {
   background: #9e9e9e;
 }

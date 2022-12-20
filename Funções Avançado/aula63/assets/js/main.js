@@ -83,6 +83,8 @@ calculadora.inicia();
 // constrution fuction
 
 function calculadora() {
+
+    let numeros = []
     
     this.display = document.querySelector('.display');
 
@@ -92,21 +94,10 @@ function calculadora() {
     }
 
     this.realizaConta = () => {
-        let conta = this.display.value;
-
-        try {
-            conta = eval(conta);
-
-            if(!conta) {
-                alert('conta inválida');
-                return;
-            }
-
-            this.display.value = String(conta);
-        } catch(e) {
-            alert('conta inválida');
-            return
-        }
+        let resultado = numeros[0] + Number(this.display.value);
+        this.clearDisplay();
+        this.btnParaDisplay(Number(resultado));
+        numeros = []
     }
     
     this.clearDisplay = () => {
@@ -124,17 +115,22 @@ function calculadora() {
             if(el.classList.contains('btn-num')) {
                 this.btnParaDisplay(el.innerText);
             }
-
+            
             if(el.classList.contains('btn-clear')) {
                 this.clearDisplay();
             }
-
+            
             if(el.classList.contains('btn-del')) {
                 this.apagaUm();
             }
-
+            
             if(el.classList.contains('btn-eq')) {
                 this.realizaConta();
+            }
+            
+            if(el.classList.contains('btn-adc')) {
+                numeros.push(Number(this.display.value));
+                this.clearDisplay();
             }
 
             this.display.focus();
