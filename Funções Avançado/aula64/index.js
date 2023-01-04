@@ -25,3 +25,5 @@ console.log(p1.nome)
 
 // chamando metodo
 p1.metodo();
+
+console.log(p1)

@@ -26,7 +26,7 @@ function criaPessoa(nome, sobrenome, altura, peso) {
 const p1 = criaPessoa('davi', 'silva', 1.7, 75);
 
 // chamando imc como atributo e não como função, usando "get"
-// console.log(p1.imc)
+ console.log(p1.imc)
 
 // utilizando setter para modificar atributo
 p1.nomeCompleto = 'Maria Oliveira Silva'
