@@ -10,8 +10,8 @@ function soma(x, y) {
 };
 
 try {                                                        // try --> captura e testa execução
-    //console.log(soma(1, 2));
-    console.log(soma("1", 2));                               // se tiver erro, lança no catch
+    console.log(soma(1, 2));
+    //console.log(soma("1", 2));                               // se tiver erro, lança no catch
 } catch(error) {
     console.log(error)                                       // catch --> exibe mensagem de erro
 }

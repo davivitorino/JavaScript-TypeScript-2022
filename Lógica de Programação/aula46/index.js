@@ -6,7 +6,7 @@ for (let i = 0; i <= 10; i++) {
 
 // incrementando de 10 em 10 '+='
 
-for (let i = 0; i <= 10; i+= 10) {
+for (let i = 0; i <= 80; i+= 10) {
     console.log(`linha ${i}`)
 }
 

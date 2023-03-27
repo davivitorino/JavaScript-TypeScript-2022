@@ -11,9 +11,10 @@ const MostrarDado = function() {
     console.log('sou um dado')
 };
 
-//MostrarDado();
+MostrarDado();
 
 // chamando função através de outra função
+
 function executarFuncao(funcao) {
     funcao();
 }

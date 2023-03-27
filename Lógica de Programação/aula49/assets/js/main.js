@@ -4,7 +4,7 @@ const paragrafo = document.querySelectorAll('p');
 
 const estilobody = getComputedStyle(document.body); // pega os estilos disponiveis/aplicados ao html 
 const backgroundColorBody = estilobody.backgroundColor; // pegando a propriedade 'backgroundcolor'
-//console.log(backgroundColorBody); chamando no browser
+console.log(backgroundColorBody); // chamando no browser
 
 // aplicando as configurações via JS
 for (let p of paragrafo) {

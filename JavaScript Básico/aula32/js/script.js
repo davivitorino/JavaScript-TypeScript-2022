@@ -20,6 +20,7 @@ function meuEscopo () {
         
         pessoas.push(cadastro)
         console.log( pessoas instanceof Array ) // teste de array?
+        console.log(pessoas)
         
         result.innerHTML += `<p>Nome: ${nome.value}</p>` 
         result.innerHTML += `<p>Sobrenome: ${sobrenome.value}</p>`

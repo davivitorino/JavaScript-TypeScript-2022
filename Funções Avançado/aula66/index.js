@@ -13,7 +13,9 @@ function* geradora1() {
 // chamando a função geradora
 const g1 = geradora1();
 console.log(g1.next().value); // chamando primeiro valor
-console.log(g1.next().done); // vendo se tem mais valores
+console.log(g1.next().value); // chamando segundo valor
+console.log(g1.next().value); // chamando terceiro valor
+console.log(g1.next().done); // vendo se acabou "true"
 
 
 // geradora chamando outra

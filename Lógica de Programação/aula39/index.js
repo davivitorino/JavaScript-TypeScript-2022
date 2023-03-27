@@ -11,3 +11,4 @@ const corUsuario = null;                        // cor usuário 'vazio'
 const corPadrao = corUsuario || 'preta'         // definição do usuário
 
 console.log(corPadrao)
+console.log(nivelUsuario)

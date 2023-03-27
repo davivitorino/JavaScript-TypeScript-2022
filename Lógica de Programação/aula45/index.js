@@ -5,7 +5,7 @@ const pessoa = {
     sobrenome: 'miranda',
     idade: 30,
     endereco: {
-        rua: 'av brasil',
+        rua:'av brasil',
         numero: 320
     }
 };

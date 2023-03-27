@@ -2,7 +2,9 @@
 // função invocada imediatamente fora do escopo global
 
 (function(idade, peso, altura) {
+
     const sobrenome = 'miranda';
+    
     function criaNome(nome) {
         return nome + ' ' + sobrenome;
     }
@@ -12,6 +14,7 @@
     }
 
     falaNome();
+
     console.log(idade, peso, altura);
 
 })(30, 80, 1.80);
