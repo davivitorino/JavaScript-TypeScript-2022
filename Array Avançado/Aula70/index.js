@@ -22,3 +22,19 @@ const terminaComA = pessoa.filter(obj => obj.nome.toLowerCase().endsWith('a'));
 console.log(nomeMaior);
 console.log(maisDeCinquenta);
 console.log(terminaComA);
+
+// filtrando numeros aleatórios
+
+let y = 1;
+let x = 100;
+
+let calc = (y,x) => { return Math.floor(Math.random()*(y-x))+ x};
+
+let rand = [];
+
+for(let i = 0; i < 100; i ++) {
+    rand.push(calc(x,y));
+}
+
+const numFilter = rand.filter(num => num > 80);
+console.log(numFilter)
