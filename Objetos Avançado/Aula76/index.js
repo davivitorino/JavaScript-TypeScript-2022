@@ -30,6 +30,7 @@ const p1 = new Produto('camiseta', 20, 10);
 p1.estoque = 100; // add valor via "set"
 console.log(p1.estoque);    // exibe valor do "get"
 
+
 // utilizando factory function com "getter" e "setter"
 
 function criaProduto(nome) {

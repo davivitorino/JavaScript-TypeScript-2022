@@ -37,6 +37,12 @@ console.log(Object.keys(p1)); // mostrando chave obj
 
 console.log(p1) // observando objeto literal
 
+// observando propriedades do objeto se é editavel
+
+console.log(Object.getOwnPropertyDescriptor(p1, 'estoque'));
+
+// percorrendo as chaves
+
 for(let chave in p1) {
     console.log(chave); // chave via "for in"
 }
