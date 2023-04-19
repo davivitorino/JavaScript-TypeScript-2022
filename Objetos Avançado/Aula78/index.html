@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+        // Prototype
+
+        function Pessoa(nome, sobrenome) {
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+            //this.nomeCompleto = () => this.nome + ' ' + this.sobrenome; // método dentro do objeto "performance ruim"
+        }
+
+        // criando Método dentro de Prototype
+        // servindo para todos os objetos
+        
+        Pessoa.prototype.nomeCompleto = function() { return this.nome + ' ' + this.sobrenome; };
+
+        const Pessoa1 = new Pessoa('Davi', 'Vitorino'); // "pessoa" = função construtora
+        const Pessoa2 = new Pessoa('João', 'Carlos'); // "pessoa" = função construtora
+
+        console.dir(Pessoa1);
+        console.dir(Pessoa2);
+
+    </script>
+</body>
+</html>
+
+
+
+
