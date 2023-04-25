@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Prototypes</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // new Object -> Object.prototype
+
+        const objA = {
+            chaveA: 'A'
+        }
+
+        // __proto__: Object.prototype
+
+        const objB = {
+            chaveB: 'B'
+        }
+
+        const objC = new Object();
+        objC.chaveC = 'C';
+        
+
+        // acessando chave:"A" pelo objeto.prototype: "B"
+
+        Object.setPrototypeOf(objB, objA);
+        console.log(objB.chaveA);
+
+        // acessando chave:"A" pelo objeto.prototype: "C" e pulando "objB"
+
+        Object.setPrototypeOf(objC, objA);
+        console.log(objC.chaveA);
+
+        // acessando chave:"B" pelo objeto.prototype: "C"
+
+        Object.setPrototypeOf(objC, objB);
+        console.log(objC.chaveB);
+
+        // função de desconto via prototype
+
+        function Produto(nome, preco) {
+            this.nome = nome;
+            this.preco = preco;
+        }
+
+        // desconto
+
+        Produto.prototype.desconto = function(percentual) {
+            this.preco = this.preco - (this.preco * (percentual / 100));
+        }
+
+        // aumento
+
+        Produto.prototype.aumento = function(percentual) {
+            this.preco = this.preco + (this.preco * (percentual / 100));
+        }
+
+        const p1 = new Produto('Camiseta', 69)
+        p1.desconto(35);    // aplicando desconto
+        console.log(p1);
+
+        // objeto literal usando a função do prototype de aumento
+
+        const p2 = {
+            nome:'Calça',
+            preco:80
+        };
+
+        Object.setPrototypeOf(p2, Produto.prototype);
+
+        p2.aumento(10);
+
+        console.log(p2)
+
+        // Object Create
+
+        const p3 = Object.create(Produto.prototype, {
+            nome: {
+                writable: true,
+                configurable: true,
+                enumerable: true,
+                value: 'Sapato'
+            },
+
+            preco: {
+                writable: true,
+                configurable: true,
+                enumerable: true,
+                value: 99
+            },
+
+            tamanho: {
+                writable: true,
+                configurable: true,
+                enumerable: true,
+                value: 42
+            },
+        });
+
+        p3.aumento(10)
+        console.log(p3)
+
+    </script>
+</body>
+</html>
